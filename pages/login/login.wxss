@@ -1,0 +1,78 @@
+/* pages/login/login.wxss */
+/*上部*/
+.top{
+    width: 100%;
+    height:300rpx;
+    background:linear-gradient(to right,#FF5138,#EE111B);
+    text-align: center;
+    position:relative;
+}
+.top>image{
+    width:150rpx;
+    height:150rpx;
+    margin-top:75rpx;
+}
+.top>text{
+    font-size:30px;
+    color:#fff;
+    position:absolute;
+    top:0;
+    left:20rpx;
+}
+/*输入框*/
+.center{
+   margin-top:70rpx; 
+}
+.inputs{
+    margin:20rpx;
+    margin-bottom:40rpx;
+    width:700rpx;
+    height:80rpx;
+    border-radius: 30rpx;
+    border:1px solid #ddd;
+    position:relative;
+}
+.inputs>input{
+    font-size:14px;
+    height:80rpx;
+    line-height: 80rpx;
+    padding-left:40rpx;
+}
+.inputs>text{
+    position:absolute;
+    top:12px;
+    right:10px;
+    font-size:12px;
+    color:red;
+    text-decoration: underline;
+}
+.center .else{
+    text-align: right;
+    font-size:12px;
+    margin-right:40rpx;
+    letter-spacing:2px;
+    margin-bottom:80rpx;
+}
+.red{
+    font-size:12px;
+    color:red; 
+}
+/*登录按钮*/
+.btn{
+    width:90%;
+    background-color: #EE111B;
+    color:#fff;
+    border-radius: 30rpx;
+    margin-bottom:120rpx;
+}
+.last{
+    text-align:center;
+    font-size: 12px;
+    color:#ccc;
+}
+.last>image{
+    width:40rpx;
+    height:40rpx;
+    margin-right:10rpx;
+    vertical-align:middle;
+}

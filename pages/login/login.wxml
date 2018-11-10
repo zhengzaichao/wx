@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view class="top">
+    <text bindtap="close">×</text>
+    <image src="../../img/logo.png" />
+</view>
+<!--输入框-->
+<view class="center">
+    <view class="inputs">
+       <input type="number" placeholder="请输入手机号" maxlength="11" focus="true"/> 
+    </view>
+    <view class="inputs">
+       <input type="number" placeholder="请输入验证码" maxlength="6"/>
+       <text>获取验证码</text>
+    </view>
+    <view class="else">
+        收不到验证码?试试<text class="red">语音验证码</text>
+    </view>
+</view>
+<!--登录按钮-->
+<button class="btn">登录</button>
+<view class="last">
+    <image src="../../img/attention.png" />新用户登录即注册
+</view>
+

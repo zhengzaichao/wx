@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/zhaodaikuai/zhaodaikuai",
+    "pages/jisudai/jisudai",
+    
+    "pages/user/user",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/jisudai2/jisudai2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#008CF6",
+    "navigationBarTitleText": "优借",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#d81e06",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home1.png"
+      },
+      {
+        "pagePath": "pages/zhaodaikuai/zhaodaikuai",
+        "text": "找贷款",
+        "iconPath": "img/daikuai.png",
+        "selectedIconPath": "img/daikuai1.png"
+      },
+      {
+        "pagePath": "pages/jisudai/jisudai",
+        "text": "极速贷",
+        "iconPath": "img/jisudai.png",
+        "selectedIconPath": "img/jisudai1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home1.png"
+      }
+    ]
+  }
+}

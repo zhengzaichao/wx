@@ -1,0 +1,54 @@
+<!--第一块 登录-->
+<view class='top'>
+  <text>设置</text>
+  <image src='../../img/user/message.png'></image>
+</view>
+<view class="head">
+  <navigator url="/pages/login/login">
+    <image src='../../img/user/avatar.png'></image>
+    立即登录 >
+  </navigator>
+</view>
+<view class='card'>
+  <image src='../../img/user/card.jpg'></image>
+</view>
+<view class="grade">
+  <view class="small">
+    <image src="../../img/user/xinyong.png"></image>我的信用
+    <view class="mid">
+      暂无等级
+    </view>
+  </view>
+  <view class="small">
+    <image src="../../img/user/yue.png"></image>我的余额
+    <view class="mid">
+      0.00元
+    </view>
+  </view>
+</view>
+<view class="divider"></view> 
+<!--第二块 订单-->
+<view class="order">
+  <view class="one">
+    <text>贷款订单</text>
+    <text class="small">查看所有订单</text>
+  </view>
+  <view class="two">
+    <view wx:for="{{list}}" wx:key="{{id}}">
+      <image src="{{item.pic}}" />
+      <view class="middle">
+        {{item.title}}
+      </view>
+    </view>
+  </view>
+</view>
+<view class="divider"></view> 
+<!--第三块 更多详情-->
+<view class="details">
+  <view wx:for="{{details}}" wx:key="{{id}}">
+    <image src="{{item.pic}}" />
+    <view class="middle">
+      {{item.title}}
+    </view>
+  </view>
+</view>

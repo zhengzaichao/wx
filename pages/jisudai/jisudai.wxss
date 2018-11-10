@@ -1,0 +1,72 @@
+/* pages/jisudai/jisudai.wxss */
+.top{
+    margin:20rpx;
+}
+.top>image{
+    width:100%;
+    height:230rpx;
+    margin-bottom:30rpx;
+}
+.top .details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30rpx;
+}
+.top .details>view{
+    font-size: 16px;
+    width:25%;
+    border-right: 1px solid #ddd;
+}
+.top .details>text{
+    text-align: center;
+    display: inline-block;
+    line-height: 60rpx;
+    height: 60rpx;
+    padding:0 30rpx 0 30rpx;
+    background: #e6e6e6;
+    font-size:12px;
+    border-radius: 15px;
+}
+.main{
+    margin:20rpx;
+    border-top:1px solid #e6e6e6;
+    padding-top:30rpx;
+}
+.main .f1{
+    display:flex;
+    font-size: 16px;
+}
+.main .f1>image{
+    width:50rpx;
+    height:50rpx;
+    margin-right:10rpx;
+}
+.main .f2{
+    display: flex;
+    justify-content: space-between;
+}
+.main .f2 .left{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+    color:#F75A05;
+}
+.main .f2 .right .application{
+    font-size: 14px;
+    color:#fff;
+    background:#0003E9;
+    width:200rpx;
+    height:60rpx;
+    line-height: 60rpx;
+    border:1px solid #0003E9;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom:10rpx;
+}
+.red{
+    color:red;
+    padding-left:20rpx;
+}
+.f2 .left .small{
+    margin-top:10rpx;
+}

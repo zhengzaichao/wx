@@ -1,0 +1,119 @@
+/* pages/home/home.wxss */
+.img_one{
+    width:375px;
+    height:148px;
+}
+/*五个圆*/
+.one{
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    display:flex;
+    justify-content: space-around;
+}
+.one image{
+    width:60rpx;
+    height:60rpx; 
+}
+.one text{
+    font-size:12px;
+}
+.circle{
+    width:90rpx;
+    height:90rpx; 
+    border-radius: 50%;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+.circle.a1{background:linear-gradient(to right,#0E49AD,#16B4EE);}
+.circle.a2{background:#14DCEC}
+.circle.a3{background:#FE3C32}
+.circle.a4{background:#7323B2}
+.circle.a5{background:#DF6A09}
+/*第二块 测贷款额度*/
+.two>text{
+  color:#bbb;
+  font-size: 12px;
+  display: inline-block;
+  margin-left:20rpx;
+}
+.two .b1{
+  display:flex;
+  justify-content: space-between;
+  margin:20rpx;
+}
+.two .b1>text:first-child{
+  font-weight: bold;
+  font-size: 22px;
+}
+.two .b1 .kuang{
+  width:250rpx;
+  height:50rpx;
+  border:1px solid #FFB7CF;
+  border-radius: 30rpx;
+  color:red;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.two .b2{
+  margin-top:30rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom:30rpx;
+}
+.two .b2>image{
+    width:320rpx;
+    height:120rpx;
+    border-radius: 8px;
+}
+/*第三块 推荐贷款*/
+.three{
+    margin:20rpx;
+}
+.three>view{
+    border-bottom:1px solid #ddd;
+    padding-bottom:15rpx;
+    padding-top:15rpx;
+}
+.three .c1{
+    display:flex;
+    justify-content: space-between;
+}
+.three .c1>text:first-child{
+    font-weight: bold;
+    font-size: 16px;
+}
+.three .c1>text:last-child{
+    color:#bbb;
+    font-size:14px;
+}
+.three .c2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.three .c2 .c2-a{
+    display: flex;
+    border-right:1px solid #ddd;
+    height:60rpx;
+    width:50%;
+}
+.three .c2 .c2-a image{
+    width:80rpx;
+    height:80rpx;
+    border-radius: 50%;
+    margin-right:5rpx;
+}
+.three .c2 .c2-a>view{
+    font-size: 16px;
+    margin-bottom:8rpx;
+}
+.three .c2 .c2-b{
+    color:red;
+    font-size: 16px;
+
+   
+    
+}

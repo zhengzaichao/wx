@@ -1,0 +1,37 @@
+<!--pages/jisudai/jisudai.wxml-->
+<view class="top">
+    <image src="../../img/yuguedu.png" />
+    <view class="details">
+        <view>
+            综合排序
+        </view>
+        <text>极好下款</text>
+        <text>芝麻分580分以上</text>
+    </view>
+</view>
+<view class="main" wx:for="{{list}}" wx:key="{{id}}">
+    <view class="f1">
+        <image src="{{item.pic}}"/>
+        <text>水象分期</text>
+    </view>
+    <view class="f2">
+        <view class="left">
+            <view>
+               {{item.money}}
+                <view class="small">预估额度（元）</view>
+            </view>
+            <view>
+                {{item.rate}}%
+                <view class="small">综合利率/日</view>
+            </view>
+        </view>  
+        <view class="right">
+            <view class="application">
+                申请贷款
+            </view>
+            <progress percent="{{item.progress}}" active='true' stroke-width="4" color="red" />
+            <text class="small red">已抢{{item.progress}}%</text> 
+        </view>
+    </view>
+</view>
+

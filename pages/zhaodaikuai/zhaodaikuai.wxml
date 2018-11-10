@@ -1,0 +1,39 @@
+<!--pages/zhaodaikuai/zhaodaikuai.wxml-->
+<view class="top">
+   <text class="selected">贷款超市</text>
+   <text bindtap="others">极速贷</text>
+</view>
+<view class="details">
+    <view class="pick">
+        金额不限
+    </view>
+    <text class="small">极好下款</text>
+    <text class="small">芝麻分</text>
+    <text class="small">新口子</text>
+</view>
+<view class="divider"></view>
+<view class="main" wx:for="{{list}}" wx:key="{{id}}">
+    <view class="f1">
+        <image src="{{item.pic}}" />
+        <text>{{item.title}}</text>
+    </view>
+    <view class="f2">
+        <view class="left">
+            {{item.money}}
+            <view class="small">
+                可贷金额(元)
+            </view>
+        </view>
+        <view class="right small">
+            参考日利率{{item.rate}}%
+            <view>
+                {{item.time}}分钟放款 | {{item.people}}人已申请
+            </view>
+        </view>
+    </view>
+    <view class="f3">
+        <image src="../../img/home/tuijian.png" />
+        <text class="small">{{item.add}}</text>
+    </view>
+    <view class="divider"></view>
+</view>

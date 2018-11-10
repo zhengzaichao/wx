@@ -1,0 +1,80 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="300" circular="true"> 
+    <swiper-item  wx:for="{{imgs}}" wx:key="{{id}}"> 
+        <image src="{{item}}" class="img_one" mode="aspectFill" lazy-load/> 
+    </swiper-item> 
+  </swiper>
+</view>
+<!--五个小图-->
+<view class="one">
+  <view>
+    <view class="circle a1">
+      <image src='../../img/1.png'/>
+    </view>
+    <text>立即贷款</text>
+  </view>
+  <view>
+    <view class="circle a2">
+      <image src='../../img/2.png'/>
+    </view>
+    <text>芝麻信用贷</text>
+  </view>
+  <view>
+    <view class="circle a3">
+      <image src='../../img/3.png'/>
+    </view>
+    <text>黑户检测</text>
+  </view>
+  <view>
+    <view class="circle a4">
+      <image src='../../img/4.png'/>
+    </view>
+    <text>秒下款</text>
+  </view>
+  <view>
+    <view class="circle a5">
+      <image src='../../img/5.png'/>
+    </view>
+    <text>办信用卡</text>
+  </view>
+</view> 
+<view class="divider"></view> 
+<!--贷款额度-->
+<view class="two">
+  <text>信用贷款额度</text>
+  <view class='b1'>
+    <text>1000~20万</text>
+    <view class='kuang'>
+      <text>测测我的额度 ></text>
+    </view>
+  </view>
+  <view class="b2">
+    <image src="../../img/fangkuan1.jpg" />
+    <image src="../../img/fangkuan2.jpg" />
+  </view>
+</view>
+<view class="divider"></view>
+ <!--推荐贷款-->
+<view class="three">
+   <view class="c1">
+     <text>推荐贷款</text>
+     <text>查看更多 ></text>
+   </view>
+   <view class="c2" wx:for="{{list}}" wx:key="{{id}}">
+     <view class="c2-a">
+       <image src="{{item.pic}}"/>
+       <view>
+        {{item.title}}
+        <view class="small">{{item.content}}</view>
+       </view>
+     </view>
+     <view class="c2-b">
+      {{item.money}}
+       <view class="small">
+         {{item.time}}
+       </view>
+     </view>
+   </view>
+</view>
